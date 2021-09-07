@@ -4,11 +4,16 @@
   margin: 0;
 }
 
+html {
+  overflow-y: hidden;
+}
+
 .container-master {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
 }
 
 .aside-bar {
@@ -30,7 +35,8 @@
 
 .music-container {
   width: 100%;
-  height: 100%;
+  overflow-y: scroll;
+  background: #1F1F1F;
 }
 
 .position-aside {
@@ -97,7 +103,7 @@ a:link {
 
 #scrollable-section {
   overflow-y: auto;
-  height: 50% !important;
+  height: 45% !important;
 }
 
 /* width */
@@ -129,13 +135,6 @@ li {
   margin-top: 8px;
 }
 
-.bottom-download-app {
-    width: 100%;
-    height: 30px;
-    background: #555;
-    margin-left: -10px;
-}
-
 .text-download {
   font-size: 1.2rem;
   color: white;
@@ -164,8 +163,8 @@ li {
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
-  height: 8px;
+  width: 70%;
+  height: 4px;
   border-radius: 5px;
   background: #d3d3d3;
   outline: none;
@@ -177,7 +176,7 @@ li {
 }
 
 .slider:hover {
-  background: #09ff00;
+  background: #1DB954;
 }
 
 .slider:hover.slider::-webkit-slider-thumb {
@@ -197,14 +196,6 @@ li {
 
 .slider::-webkit-slider-thumb:hover {
   opacity: 1;
-}
-
-.slider::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
 }
 
 .icon-bottom-nav-audio {
@@ -233,7 +224,7 @@ li {
 
 .slider1 {
   -webkit-appearance: none;
-  width: 700px;
+  width: 560px;
   height: 4px;
   border-radius: 5px;
   background: #d3d3d3;
@@ -246,7 +237,7 @@ li {
 }
 
 .slider1:hover {
-  background: #09ff00;
+  background: #1DB954;
 }
 
 .slider1:hover.slider1::-webkit-slider-thumb {
@@ -268,14 +259,6 @@ li {
   opacity: 1;
 }
 
-.slider1::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-}
-
 .slidecontainer1 {
   margin-right: auto;
   margin-left: auto;
@@ -285,13 +268,13 @@ li {
 .slidecontainer1::before {
   content: "0:00";
   color: white;
-  font-size: 12px;
+  font-size: 9px;
 }
 
 .slidecontainer1::after {
   content: "3:00";
   color: white;
-  font-size: 12px;
+  font-size: 9px;
 }
 
 .play-buttons {
@@ -321,6 +304,7 @@ li {
 
 .jumbotron {
   background-color: transparent;
+  padding: 0;
 }
 
 .jumbotron span {
@@ -329,16 +313,20 @@ li {
 .jumbotron .header h1 {
   font-family: "Fira Sans", sans-serif;
   width: bolder;
-  font-size: 80px;
+  font-size: 96px;
 }
 
 #navbar {
   background-color: #181818;
   color: white;
-  background-image: url("https://cdn-az.allevents.in/events10/banners/743f032543970e96c3e5444032433314b29bc203a5e94bdddcd427fcd8aefefa-rimg-w526-h296-gmir.jpg?v=1601440126");
+  background-image: url("./img/queen-live-around-the-world.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
+}
+
+.btn:focus {
+  box-shadow: none;
 }
 
 .jumbotron .bi {
@@ -371,3 +359,70 @@ li {
   border-bottom: none;
 }
  */
+
+.buttons-row {
+  display: flex;
+  padding: 24px 32px;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.main-content-album {
+  width: 100%;
+  background: #1F1F1F;
+  overflow-y: auto;
+}
+
+.play-button {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #1DB954;
+  position: relative;
+  margin-right: 28px;
+}
+
+.play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  margin: auto;
+  font-size: 40px;
+}
+
+.tr-dots {
+  margin-left: 24px;
+  font-size: 28px;
+}
+
+
+#follow-button {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  line-height: 16px;
+  padding: 7px 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.icons-color-size-before {
+  color: white;
+  font-size: 1.1rem;
+  margin-left: 15px;
+  font-weight: normal;
+}
+
+.padding-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 32px;
+}
