@@ -277,10 +277,6 @@ li {
   font-size: 9px;
 }
 
-.play-buttons {
-  
-}
-
 /* .navbar-nav .nav-item .nav-link {
   padding: 0;
   margin: 0 8px;
@@ -380,6 +376,7 @@ li {
   background: #1DB954;
   position: relative;
   margin-right: 28px;
+  cursor: pointer;
 }
 
 .play {
@@ -395,6 +392,7 @@ li {
 .tr-dots {
   margin-left: 24px;
   font-size: 28px;
+  cursor: pointer;
 }
 
 
@@ -412,6 +410,7 @@ li {
   padding: 7px 15px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .icons-color-size-before {
