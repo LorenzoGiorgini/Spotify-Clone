@@ -1,0 +1,7 @@
+.card-body .dotted {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 120px;
+  vertical-align: middle;
+}

@@ -8,9 +8,335 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./artist-page.css">
     <link rel="icon" href="./img/Spotify_Icon_RGB_Green.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap"rel="stylesheet"/>
     <title>Spotify - Web Player</title>
   </head>
   <body>
+    <div class="container-master">
+      <div class="aside-bar">
+        <div class="col-3 position-aside">
+          <a href=""><img src="./img/Spotify_Logo_RGB_White.png" id="logo-spotify"></a>
+          <div>
+              <div class="d-flex align-items-center justify-content-start section-selected-style">
+                  <a href=""><i class="bi bi-house-door-fill icons-color-size"></i></a>
+                  <a href="#"><p class="section-side">Home</p></a>
+              </div>
+          </div>
+          <div>
+              <div class="d-flex align-items-center justify-content-start section-selected-style-list">
+                  <a href=""><i class="bi bi-search icons-color-size"></i></a>
+                  <a href="#"><p class="section-side">Search</p></a>
+              </div>
+          </div>
+          <div>
+              <div class="d-flex align-items-center justify-content-start section-selected-style-list">
+                  <a href=""><i class="bi bi-music-note-list icons-color-size"></i></a>
+                  <a href="#"><p class="section-side">Your Library</p></a>
+              </div>
+          </div>
+          <div>
+              <div class="d-flex align-items-center justify-content-start section-selected-style-list-bottom">
+                  <a href=""><i class="bi bi-plus-square-fill icons-color-size"></i></a>
+                  <a href="#"><p class="section-side">Create Playlist</p></a>
+              </div>
+          </div>
+          <div>
+              <div class="d-flex align-items-center justify-content-start section-selected-style-list-lower">
+                  <a href=""><i class="bi bi-heart-fill icons-color-size"></i></a>
+                  <a href="#"><p class="section-side">Liked Songs</p></a>
+              </div>
+          </div>
+          <hr class="hr-styled">
+          <div>
+              
+          </div>
+          <ul id="scrollable-section">
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+              <a href=""><li>Random Playlist</li></a>
+          </ul>
+          <div class="d-flex align-items-baseline">
+              <a href=""><i class="bi bi-download icons-color-size" style="margin-left: 30px;"></i></a>
+              <a href=""><p class="text-download" style="margin-left: 20px;">Install App</p></a>
+          </div>
+      </div>
+        <div class="music-container">
+          <section id="navbar" >
+            <div class="container-fluid">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-svideo-dark">
+                <div class="nav-item active">
+                  <i class="bi bi-chevron-left"></i>
+                </div>
+                <div class="nav-item text-muted ml-3">
+                  <i class="bi bi-chevron-right"></i>
+                </div>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto"></ul>
+                  <div>
+                    <div class="dropdown d-inline-block">
+                      <a
+                        class="btn nav-btn dropdown-toggle"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        style="color: white;"
+                      >
+                        <img
+                          src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+                          width="28"
+                          height="28"
+                          class="mr-1"
+                          style="border-radius: 50%;"
+                        />
+                        <span class="d-inline-block">Diego 'Ziba' Balack</span>
+                      </a>
+      
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+      
+              <div class="jumbotron jumbotron-fluid">
+                <div style="margin: 35px; margin-top: 146px;">
+                  <span>
+                    <i class="bi bi-patch-check-fill"></i>
+                    Verified Artist
+                  </span>
+                  <span class="header"><h1>Queen</h1></span>
+                  <p class="lead">37,120,733 monthly listeners</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-content-album">
+              <div>
+                <div class="buttons-row"> <!-- padding : 24 32 -->
+                  <div class="play-button">
+                    <div class="play">
+                      <i class="bi bi-play-fill"></i>
+                    </div>
+                  </div>
+                  <button id="follow-button">FOLLOWING</button>
+                  <a
+                        class="btn nav-btn "
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        style="color: white;"
+                      >
+                      <i class="bi bi-three-dots tr-dots"></i>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                </div>
+                <div class="padding-content">
+                  <div class="row">
+                    <div class="col-9 d-flex">
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="col-12">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                    <div class="col-9 d-flex">
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                    <div class="col-9 d-flex">
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                    <div class="col-9 d-flex">
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                    <div class="col-9 d-flex">
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                    <div class="col-9 d-flex">
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                    <div class="col-9 d-flex">
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                    <div class="col-9 d-flex">
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                    <div class="col-9 d-flex">
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                    <div class="col-9 d-flex">
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                      <div class="col-4">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, nemo!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="left-fixed" style="width: 100%; height: 10vh;">
+        <nav class="navbar navbar-expand-lg navbar-dark background-spotify" style="height: 100%; position: sticky; bottom: 0;">
+          <a class="navbar-brand" href="#"><img src="./img/juice 2.jpg" class="music-selected"><a href="" class="upper-title">  This is a sample text <br> <span>This is a sample text</span></a></a>
+          <i class="bi bi-plus-circle icon-bottom-nav"></i>
+          <i class="bi bi-pip icon-bottom-nav"></i>
+        
+          <div class="collapse navbar-collapse d-flex flex-column" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto d-flex flex-column">
+              <div class="play-buttons m-auto">
+                <i class="bi bi-skip-start-fill icons-color-size-before"></i>
+                <i class="bi bi-play-circle-fill icons-color-size"></i>
+                <i class="bi bi-skip-end-fill icons-color-size-before"></i>
+              </div>
+              <div class="slidecontainer1">
+                  <input type="range" min="1" max="100" value="50" class="slider1" id="myRange">
+              </div>
+            </ul>
+          </div>
+            <div class="form-inline my-2 my-lg-0">
+              <a href=""><i class="bi bi-music-note-list icon-bottom-nav"></i></a>
+              <a href=""><i class="bi bi-speaker icon-bottom-nav"></i></a>
+              <a href=""><i class="bi bi-volume-down icon-bottom-nav-audio"></i></a>
+              <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              </div>
+            </div>
+          </div>
+      </nav>
+     </div>
+    </div>
 
     <div class="container-fluid fluid-padding" >
         <div class="row" style="position: relative;">
