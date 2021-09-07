@@ -23,9 +23,9 @@
 }
 
 #logo-spotify {
-    height: 45px;
-    margin-top: 20px;
-    margin-left: 20px;
+  height: 45px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .music-container {
@@ -39,99 +39,94 @@
 }
 
 .icons-color-size {
-    color: white;
-    font-size: 1.5rem;
-    margin-left: 15px;
-    font-weight: normal;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  font-weight: normal;
 }
 
 .hr-styled {
-    background: white;
-    margin-left: 30px;
+  background: white;
+  margin-left: 30px;
 }
 
-
 .section-side {
-    color: white;
-    margin-left: 15px;
-    margin-top: 20px;
+  color: white;
+  margin-left: 15px;
+  margin-top: 20px;
 }
 
 a:link {
-    text-decoration: none!important;
+  text-decoration: none !important;
 }
 
-
-.section-selected-style:active{
-    background: #282828;
-    border-radius: 5px;
+.section-selected-style:active {
+  background: #282828;
+  border-radius: 5px;
 }
 
 .section-selected-style {
-    margin-top: 25px;
-    height: 40px;
-    cursor: pointer;
-    margin-left: 15px;
+  margin-top: 25px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 15px;
 }
-
 
 .section-selected-style-list {
-    height: 40px;
-    cursor: pointer;
-    margin-left: 15px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 15px;
 }
 
-.section-selected-style-list:active{
-    background: #282828;
-    border-radius: 5px;
-    
+.section-selected-style-list:active {
+  background: #282828;
+  border-radius: 5px;
 }
 
 .section-selected-style-list-bottom {
-    margin-top: 30px;
-    margin-bottom: 0;
-    margin-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 
-
 .section-selected-style-list-lower {
-    height: 40px;
-    cursor: pointer;
-    margin-left: 15px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 15px;
 }
 
 #scrollable-section {
-    overflow-y: auto; 
-    height: 50%!important;
+  overflow-y: auto;
+  height: 50% !important;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 14px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #4D4D4D; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #6e6c6c; 
-  }
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6e6c6c;
+}
 
 li {
-    list-style: none;
-    padding: 0;
-    margin-left: -10px;
-    color: white;
-    font-size: 16px;
-    margin-top: 8px;
+  list-style: none;
+  padding: 0;
+  margin-left: -10px;
+  color: white;
+  font-size: 16px;
+  margin-top: 8px;
 }
 
 .bottom-download-app {
@@ -142,9 +137,9 @@ li {
 }
 
 .text-download {
-    font-size: 1.2rem;
-    color: white;
-    margin-left: 10px;
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 10px;
 }
 
 .background-spotify {
@@ -152,235 +147,156 @@ li {
 }
 
 .icon-bottom-nav {
-    color: #535353;
-    font-size: 1.1rem;
-    margin-left: 15px;
-    font-weight: normal;
+  color: #535353;
+  font-size: 1.1rem;
+  margin-left: 15px;
+  font-weight: normal;
 }
 
-.icon-bottom-nav:hover{
-    color: white;
+.icon-bottom-nav:hover {
+  color: white;
 }
 
 .music-selected {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 8px;
-    border-radius: 5px;  
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    margin-left: 5px;
-    margin-bottom: 11px;
-  }
-
-  .slider:hover {
-    background: #09ff00;
-  }
-
-  .slider:hover.slider::-webkit-slider-thumb{
-    opacity: 1;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%; 
-    background:  #FFFFFF;
-    cursor: pointer;
-    opacity: 0;
-  }
-
-  .slider::-webkit-slider-thumb:hover {
-      opacity: 1;
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #FFFFFF;
-    cursor: pointer;
-  }
-
-  .icon-bottom-nav-audio {
-    color: #535353;
-    font-size: 1.5rem;
-    margin-left: 15px;
-    font-weight: normal;
-  }
-
-  .icon-bottom-nav-audio:hover {
-      color: white;
-  }
-
-  .upper-title {
-    color: white;
-    text-decoration: initial!important;
-  }
-
-  .upper-title:hover {
-    color: white;
-
-  }
-
-  .upper-title:link:hover {
-    text-decoration: underline!important;
-  }
-
-
-  .slider1 {
-    -webkit-appearance: none;
-    width: 700px;
-    height: 4px;
-    border-radius: 5px;  
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-    margin-left: 5px;
-    margin-bottom: 15px;
-  }
-
-  .slider1:hover {
-    background: #09ff00;
-  }
-
-  .slider1:hover.slider1::-webkit-slider-thumb{
-    opacity: 1;
-  }
-  
-  .slider1::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%; 
-    background:  #FFFFFF;
-    cursor: pointer;
-    opacity: 0;
-  }
-
-  .slider1::-webkit-slider-thumb:hover {
-      opacity: 1;
-  }
-  
-  .slider1::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #FFFFFF;
-    cursor: pointer;
-  }
-
-  .slidecontainer1 {
-      margin-right: auto;
-      margin-left: auto;
-      margin: auto;
-  }
-
-  .slidecontainer1::before {
-    content: "0:00";
-    color: white;
-    font-size: 12px;
-  }
-
-  .slidecontainer1::after {
-    content: "3:00";
-    color: white;
-    font-size: 12px;
-  }
-
-  .play-buttons {
-    
-  }
-
-  /* .navbar-nav .nav-item .nav-link {
-  padding: 0;
-  margin: 0 8px;
-} */
-/* .navbar-nav .active .nav-link {
-  border-bottom: 1px solid white;
-} */
-.dropdown-menu {
-  /* aligns dropdown to the right */
-  left: unset;
-  right: 0;
-}
-
-.nav-btn span {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 120px;
-  vertical-align: middle;
-}
-
-.navbar {
-  background-color: transparent;
-}
-
-.jumbotron {
-  background-color: transparent;
-}
-
-.jumbotron span {
-  width: bold;
-}
-.jumbotron .header h1 {
-  font-family: "Fira Sans", sans-serif;
-  width: bolder;
-  font-size: 80px;
-}
-
-#navbar {
-  background-color: #181818;
-  color: white;
-  background-image: url("https://cdn-az.allevents.in/events10/banners/743f032543970e96c3e5444032433314b29bc203a5e94bdddcd427fcd8aefefa-rimg-w526-h296-gmir.jpg?v=1601440126");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
-}
-
-.jumbotron .bi {
-  color: rgb(12, 125, 231);
-}
-#navbar::before {
-  content: " ";
-  height: 450px;
-  background-image: linear-gradient(
-    at right,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgb(14, 11, 11) 60%
-  );
-
-  position: left;
+  -webkit-appearance: none;
   width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin-left: 5px;
+  margin-bottom: 11px;
 }
 
-.dropdown {
-  background-color: rgba(27, 2, 11, 0.836);
-  border-radius: 60px;
-  display: flex;
-  margin-right: 0;
+.slider:hover {
+  background: #09ff00;
 }
-.dropdown span {
+
+.slider:hover.slider::-webkit-slider-thumb {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  opacity: 1;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.icon-bottom-nav-audio {
+  color: #535353;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  font-weight: normal;
+}
+
+.icon-bottom-nav-audio:hover {
   color: white;
 }
 
-/* nav .btn-group .dropdown-menu .dropdown-item:last-child {
-  border-bottom: none;
+.upper-title {
+  color: white;
+  text-decoration: initial !important;
 }
+
+.upper-title:hover {
+  color: white;
+}
+
+.upper-title:link:hover {
+  text-decoration: underline !important;
+}
+
+.slider1 {
+  -webkit-appearance: none;
+  width: 700px;
+  height: 4px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.slider1:hover {
+  background: #09ff00;
+}
+
+.slider1:hover.slider1::-webkit-slider-thumb {
+  opacity: 1;
+}
+
+.slider1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.slider1::-webkit-slider-thumb:hover {
+  opacity: 1;
+}
+
+.slider1::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.slidecontainer1 {
+  margin-right: auto;
+  margin-left: auto;
+  margin: auto;
+}
+
+.slidecontainer1::before {
+  content: "0:00";
+  color: white;
+  font-size: 12px;
+}
+
+.slidecontainer1::after {
+  content: "3:00";
+  color: white;
+  font-size: 12px;
+}
+
+.play-buttons {
+}
+
  */  /* .navbar-nav .nav-item .nav-link {
   padding: 0;
   margin: 0 8px;
