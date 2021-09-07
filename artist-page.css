@@ -295,9 +295,10 @@ li {
 }
 
 .play-buttons {
+  
 }
 
- */  /* .navbar-nav .nav-item .nav-link {
+/* .navbar-nav .nav-item .nav-link {
   padding: 0;
   margin: 0 8px;
 } */
@@ -316,10 +317,6 @@ li {
   overflow: hidden;
   width: 120px;
   vertical-align: middle;
-}
-
-.navbar {
-  background-color: transparent;
 }
 
 .jumbotron {
