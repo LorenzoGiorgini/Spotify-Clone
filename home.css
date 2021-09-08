@@ -6,8 +6,14 @@
   vertical-align: middle;
 }
 
+.card-top img {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
 .card-top {
   background: linear-gradient(#3a1e1e, #3a2f2f);
+  border-radius: 5px;
 }
 .card {
   background-color: #272727;
