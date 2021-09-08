@@ -104,7 +104,7 @@ a:link {
 
 #scrollable-section {
   overflow-y: auto;
-  height: 200px !important;
+  height: 45%!important;
 }
 
 /* width */
