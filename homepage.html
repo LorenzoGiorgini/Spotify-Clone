@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="container-master">
-      <div class="aside-bar">
+      <div class="aside-bar " style="height: 90vh !important;">
         <div class="col-3 position-aside">
           <a href=""><img src="./img/Spotify_Logo_RGB_White.png" id="logo-spotify"></a>
           <div>
@@ -93,62 +93,63 @@
               <a href=""><i class="bi bi-download icons-color-size" style="margin-left: 30px;"></i></a>
               <a href=""><p class="text-download" style="margin-left: 20px;">Install App</p></a>
           </div>
-      </div>
+        </div>
+        <div class="w-100">
+          <nav id="jumbo-navbar" class="navbar navbar-expand-lg navbar-dark ">
+            <div class="nav-item active" style="color: white; border-radius: 50px;background-color:rgb(34, 2, 2)">
+              <i class="bi bi-chevron-left" ></i>
+            </div>
+            <div class="nav-item text-muted ml-3" style=" border-radius: 50px;background-color:rgb(34, 2, 2);">
+              <i class="bi bi-chevron-right"></i>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto"></ul>
+              <div>
+                <div class="dropdown d-inline-block">
+                  <a
+                    class="btn nav-btn dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="color: white;"
+                  >
+                    <img
+                      src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+                      width="28"
+                      height="28"
+                      class="mr-1"
+                      style="border-radius: 50%;"
+                    />
+                    <span class="d-inline-block">Diego 'Ziba' Balack</span>
+                  </a>
+    
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
         <div class="music-container">
           <section id="navbar" >
             <div class="container-fluid">
-              <nav class="navbar navbar-expand-lg navbar-dark ">
-                <div class="nav-item active">
-                  <i class="bi bi-chevron-left"></i>
-                </div>
-                <div class="nav-item text-muted ml-3">
-                  <i class="bi bi-chevron-right"></i>
-                </div>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-      
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto"></ul>
-                  <div>
-                    <div class="dropdown d-inline-block">
-                      <a
-                        class="btn nav-btn dropdown-toggle"
-                        href="#"
-                        role="button"
-                        id="dropdownMenuLink"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        style="color: white;"
-                      >
-                        <img
-                          src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
-                          width="28"
-                          height="28"
-                          class="mr-1"
-                          style="border-radius: 50%;"
-                        />
-                        <span class="d-inline-block">Diego 'Ziba' Balack</span>
-                      </a>
-      
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
               <section id="album-cards">
                 <div class="container">
                   <h2>Good morning</h2>
@@ -399,6 +400,7 @@
                       </div>
                       <div class="row py-1 d-flex">
                         <div class="col-2 h-100">
+                          
                           <div class="card">
                             <img
                               src="./img/artist-img/curtis6.jpg"
@@ -606,6 +608,7 @@
               </div>
             </div>
           </section>
+        </div>
         </div>
       </div>
       <div class="left-fixed" style="width: 100%; height: 10vh;">

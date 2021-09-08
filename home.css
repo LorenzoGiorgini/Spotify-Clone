@@ -1,9 +1,18 @@
+#navbar {
+  width: 100%;
+}
+
+#jumbo-navbar {
+  background-color: #410707;
+}
+
 .card-body .dotted {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 120px;
   vertical-align: middle;
+  font-size: small;
 }
 
 .card-top img {
