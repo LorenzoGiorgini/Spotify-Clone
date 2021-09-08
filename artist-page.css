@@ -360,13 +360,15 @@ li {
   display: flex;
   padding: 24px 32px;
   align-items: center;
-  margin-top: -20px;
+  margin-top: 15px;
 }
 
 .main-content-album {
   width: 100%;
-  background: #1F1F1F;
+  background: rgb(31,31,31);
+  background: linear-gradient(0deg, rgba(31,31,31,1) 55%, rgba(139,140,140,1) 100%);
   overflow-y: auto;
+  margin-top: -16px;
 }
 
 .play-button {
@@ -530,7 +532,6 @@ li {
   letter-spacing: normal;
   line-height: 24px;
   color: white;
-  
 }
 
 .name-tag:hover {
