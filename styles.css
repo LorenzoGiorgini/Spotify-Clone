@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+}
+
+
+.play-button {
+    color: white;
+    fill: white;
+    background-color: #1DB954;
+    border: #1DB954 solid 2px;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    margin-right: 28px;
+}
+
+
+  
+  .play {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    right: 0;
+    margin: auto;
+    font-size: 40px;
+  }
+
+  .three-dots {
+      color: gray;
+      height: 100px;
+      margin-left: 20px;
+      height: 20px;
+      width: 20px;
+  }
+
+.top-image {
+    max-height: 30px;
+    margin-left: 0px;
+}
+
+.title-heading {
+    color: gray;
+    font-size: 10px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.line-break {
+    color:gray;
+
+}
+
+.br {
+    display: block;
+    margin-bottom: -10px;
+}
+
+.song-text {
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.song-number {
+    color: gray;
+    font-size: 12px;
+    font-family: sans-serif;
+
+}
+
+.song-time {
+    color: gray;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.song-artist {
+    font-size: 10px;
+    font-family: sans-serif;
+    color: gray;
+    margin-top: 0px;
