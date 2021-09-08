@@ -452,7 +452,7 @@ li {
 .title-section {
   font-size: 24px;
   color: white;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .line-breaker {
@@ -475,11 +475,17 @@ li {
   width: 16px;
   margin-right: 15px;
   margin-top: 22px;
+  opacity: 0;
 }
 
-.background-list:hover {
-  background: #2A2B2E;
+.background-list:hover{
+  background: #2A2C2F;
   border-radius: 3px;
+  opacity: 1;
+}
+
+.background-list:hover .unliked {
+  opacity: 1;
 }
 
 .see-more {
@@ -495,4 +501,39 @@ li {
 
 .see-more:hover {
   opacity: 1;
+}
+
+.artist-pick {
+  width: 76px;
+  height: 76px;
+  margin: 0 16px 0 0;
+}
+
+.artist-small-pic {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.artist-name {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-transform: none;
+}
+
+.name-tag {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 24px;
+  color: white;
+  
+}
+
+.name-tag:hover {
+  text-decoration: underline!important;
+  color: white;
 }
