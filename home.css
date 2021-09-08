@@ -5,3 +5,60 @@
   width: 120px;
   vertical-align: middle;
 }
+
+.card-top {
+  background: linear-gradient(#3a1e1e, #3a2f2f);
+}
+.card {
+  background-color: #272727;
+}
+
+.container-fluid {
+  background: linear-gradient(#410707, #000000) !important;
+  background-attachment: fixed;
+  color: white;
+}
+
+.card:hover {
+  opacity: 1;
+}
+.card {
+  text-align: center;
+
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+  opacity: 0.5;
+}
+
+.card-top {
+  text-align: center;
+  padding-bottom: 1em;
+  margin: 1em;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+  opacity: 0.5;
+}
+
+.card-top:hover {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+.card-top:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+/* 
+
+
+
+.album-container .card-body h4 {
+  margin-top: 0px;
+}
+.album-container img {
+  width: 100%;
+} */
