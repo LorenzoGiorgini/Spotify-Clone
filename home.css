@@ -2,6 +2,13 @@
   width: 100%;
 }
 
+.nav-item .bi {
+  background: rgb(34, 2, 2);
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+
 #jumbo-navbar {
   background-color: #410707;
 }
