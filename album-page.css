@@ -41,6 +41,7 @@ html {
   width: 100%;
   overflow-y: scroll;
   background: #1F1F1F;
+  overflow-x: hidden;
 }
 
 .position-aside {
@@ -317,9 +318,8 @@ li {
 }
 
 #navbar {
-  background-color: #181818;
+  background: #581F48;
   color: white;
-  background-image: url("./img/queen-live-around-the-world.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
@@ -370,7 +370,7 @@ li {
 .main-content-album {
   width: 100%;
   background: rgb(31,31,31);
-  background: linear-gradient(0deg, rgba(31,31,31,1) 75%, rgba(139,140,140,1) 100%);
+  background: linear-gradient(0deg, rgba(31,31,31,1) 83%, #3F1634 100%);
   overflow-y: hidden;
   margin-top: -16px;
 }
@@ -394,30 +394,18 @@ li {
 
 .play {
   font-size: 40px;
+  margin-left: 5px;
 }
 
 .tr-dots {
   margin-left: 24px;
   font-size: 28px;
   cursor: pointer;
+  opacity: 0.5;
 }
 
-
-#follow-button {
-  background-color: transparent;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .1em;
-  line-height: 16px;
-  padding: 7px 15px;
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
+.tr-dots:hover {
+  opacity: 1;
 }
 
 .icons-color-size-before {
@@ -431,6 +419,17 @@ li {
   display: flex;
   flex-direction: column;
   padding: 0px 32px;
+}
+
+.liked {
+  height: 32px;
+  width: 32px;
+  opacity: 0.5;
+  color: white;
+}
+
+.liked:hover {
+  opacity: 1;
 }
 
 .artist-pic {

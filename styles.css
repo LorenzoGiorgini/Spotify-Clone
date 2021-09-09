@@ -1,3 +1,54 @@
+body {
+    background-color: black;
+}
+
+.top-image {
+    max-height: 30px;
+    margin-left: 0px;
+}
+
+.title-heading {
+    color: gray;
+    font-size: 10px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.line-break {
+    color:rgb(255, 0, 0);
+}
+
+.br {
+    display: block;
+    margin-bottom: -10px;
+}
+
+.song-text {
+    color: white;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.song-number {
+    color: gray;
+    font-size: 12px;
+    font-family: sans-serif;
+
+}
+
+.song-time {
+    color: gray;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.song-artist {
+    font-size: 10px;
+    font-family: sans-serif;
+    color: gray;
+    margin-top: 0px;
+
 .top {
     color: black;
     background-color: black;
