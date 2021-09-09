@@ -2,38 +2,6 @@ body {
     background-color: black;
 }
 
-
-.play-button {
-    color: white;
-    fill: white;
-    background-color: #1DB954;
-    border: #1DB954 solid 2px;
-    border-radius: 50%;
-    height: 44px;
-    width: 44px;
-    margin-right: 28px;
-}
-
-
-  
-  .play {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 25%;
-    right: 0;
-    margin: auto;
-    font-size: 40px;
-  }
-
-  .three-dots {
-      color: gray;
-      height: 100px;
-      margin-left: 20px;
-      height: 20px;
-      width: 20px;
-  }
-
 .top-image {
     max-height: 30px;
     margin-left: 0px;
@@ -48,8 +16,7 @@ body {
 }
 
 .line-break {
-    color:gray;
-
+    color:rgb(255, 0, 0);
 }
 
 .br {
@@ -81,3 +48,4 @@ body {
     font-family: sans-serif;
     color: gray;
     margin-top: 0px;
+}
