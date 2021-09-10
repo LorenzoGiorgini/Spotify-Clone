@@ -6,14 +6,13 @@
 
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./album-page.css">
+    <link rel="stylesheet" href="./profile-page.css">
     <link rel="icon" href="./img/Spotify_Icon_RGB_Green.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap"rel="stylesheet"/>
     <link rel="stylesheet" href="./cards-album.css">
-    <link rel="stylesheet" href="./styles.css">
     <title>Spotify - Web Player</title>
   </head>
   <body>
@@ -154,18 +153,26 @@
                     <div class="jumbotron-album">
                         <div class="row">
                             <div class="col-12 d-flex">
-                                <img src="./img/artist-img/backstreet10.jpg" class="img-fluid" style="height: 232px; width: 232px; margin: 30px; filter: drop-shadow(30px 10px 4px #0000001f);">
+                                <div class="image-profile-big">
+                                  <div class="box">
+                                    <div class="small-box">
+                                      <i class="bi bi-pencil pencil-profile"></i>
+                                      <h1 class="text-profile">Choose Image</h1>
+                                    </div>
+                                  </div>
+                                </div>
                                 <div class="d-flex flex-column justify-content-end" style="margin-bottom: 30px;">
                                     <div>
-                                        <h2 style="font-size: 12px; color: white; font-weight: bold;">ALBUM</h2>
+                                        <h2 style="font-size: 12px; color: white; font-weight: bold;">PROFILE</h2>
                                     </div>
                                     <div>
-                                        <h1 style="color: white; font-weight: bold;">Bohemian Rhapsody (The Original Soundtrack)</h1>
+                                        <h1 style="color: white; font-weight: bold; font-size: 48px;">Name of the profile</h1>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <img src="./img/juice 2.jpg" style="height: 24px; width: 24px; border-radius: 50%; object-fit: cover; margin-right: 5px;">
-                                        <h2 style="font-size: 14px; color: white; margin-bottom: 0; font-weight: bold;">Queen</h2>
-                                        <span class="text-muted" style="font-size: 14px; margin-left: 5px;">• 2018 • 22 songs , 1 hr 19 min</span>
+                                        <span class="text-muted" style="font-size: 14px; margin-left: 5px;">11 Public Playlists • </span>
+                                        <a href="" class="text-followers"> 1 Follower</a>
+                                        <span class="text-muted">•</span> 
+                                        <a href="" class="text-followers">11 Following</a>
                                     </div>
                                 </div>
                             </div>
@@ -175,15 +182,7 @@
             </div>
             <div class="main-content-album">
               <div>
-                <div class="buttons-row">
-                  <div class="play-button">
-                    <div class="play">
-                      <i class="bi bi-play-fill"></i>
-                    </div>
-                  </div>
-                  <svg class="liked"  width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M125.784 35.0369C113.039 22.2916 92.9859 21.3682 79.1227 32.8994C79.1062 32.9135 77.318 34.3807 75 34.3807C72.6234 34.3807 70.9266 32.9416 70.8609 32.8853C57.0141 21.3682 36.9609 22.2916 24.2156 35.0369C17.6695 41.583 14.0625 50.2877 14.0625 59.5478C14.0625 68.808 17.6695 77.5127 24.0914 83.9228L64.3078 131.006C66.9844 134.14 70.882 135.938 75 135.938C79.1203 135.938 83.0156 134.14 85.6922 131.009L125.782 84.0611C139.301 70.5447 139.301 48.5533 125.784 35.0369ZM122.346 80.8807L82.1297 127.964C80.3461 130.05 77.7469 131.25 75 131.25C72.2531 131.25 69.6562 130.053 67.8703 127.964L27.532 80.7447C21.8695 75.0822 18.75 67.5541 18.75 59.5478C18.75 51.5392 21.8695 44.0135 27.5297 38.351C33.3961 32.4822 41.0555 29.5127 48.7336 29.5127C55.4742 29.5127 62.2289 31.8025 67.7977 36.4338C68.0977 36.7033 70.8586 39.0682 75 39.0682C79.0266 39.0682 81.8578 36.7314 82.1367 36.49C94.1109 26.5291 111.45 27.3307 122.47 38.351C134.159 50.0393 134.159 69.0564 122.346 80.8807Z" fill="#535353"/>
-                  </svg>
+                <div class="buttons-row ml-0">
                   <a
                         class="btn nav-btn "
                         href="#"
@@ -192,9 +191,9 @@
                         data-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="false"
-                        style="color: white;"
+                        style="color: white; padding: 0;"
                       >
-                      <i class="bi bi-three-dots tr-dots"></i>
+                      <i class="bi bi-three-dots tr-dots m-0"></i>
                       </a>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="#">Action</a>
@@ -203,212 +202,221 @@
                       </div>
                 </div>
                 <div class="padding-content">
-                    <div class="container-fluid p-0 m-0">
-                        <div class="row">
-                          <div class="col-sm-6 col-md-4 col-lg-2">
-                            <p class="title-heading">#TITLE</p>
-                          </div>
-                          <hr class="line-break"/>
+                  <section id="second-section">
+                    <div class="container-fluid p-0" style="margin-bottom: 64px;">
+                      <div class="d-flex justify-content-between mt-3">
+                        <div class="d-flex flex-column">
+                            <h4 style="font-weight: bold;">Top artists this month</h4>
+                            <span class="text-muted">Only visible to you</span>
                         </div>
-                  
-                        <div class="container-fluid p-0 m-0">
-                          <!--Song 1 -->
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">1</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">20th Century Fox Fanfare</p>
-                              <span class="br"></span>
-                              <p class="song-artist align-top">Queen</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">0:25</p>
-                            </div>
-                          </div>
-                  
-                          <!-- Song 2 -->
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">2</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">Somebody To Love</p>
-                              <span class="br"></span>
-                              <p class="song-artist">Queen</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">4:55</p>
-                            </div>
-                          </div>
-                  
-                          <!-- Song 3 -->
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">3</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">Doing Alright -... Revisited</p>
-                              <span class="br"></span>
-                              <p class="song-artist">Smile</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">3:16</p>
-                            </div>
-                          </div>
-                  
-                          <!-- Song 4 -->
-                  
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">4</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">Keep Yourself Alive - Live At The Rainbow</p>
-                              <span class="br"></span>
-                              <p class="song-artist">Queen</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">3:56</p>
-                            </div>
-                          </div>
-                  
-                          <!-- Song 5 -->
-                  
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">5</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">Killer Queen</p>
-                              <span class="br"></span>
-                              <p class="song-artist">Queen</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">2:59</p>
-                            </div>
-                          </div>
-                  
-                          <!-- Song 6 -->
-                  
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">6</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">Fat Bottomed Girls - Live In Paris</p>
-                              <span class="br"></span>
-                              <p class="song-artist">Queen</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">4:37</p>
-                            </div>
-                          </div>
-                  
-                          <!-- Song 7 -->
-                  
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">7</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">Bohemian Rhapsody</p>
-                              <span class="br"></span>
-                              <p class="song-artist">Queen</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">5:54</p>
-                            </div>
-                          </div>
-                  
-                          <!-- Song 8 -->
-                  
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">8</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">
-                                Now I'm Here - Live At The Hammersmith Odeon
+                      </div>
+                      <div class="row py-1 d-flex">
+                        <div class="col-2 h-100">
+                          
+                          <div class="card">
+                            <img
+                              src="./img/artist-img/curtis6.jpg"
+                              class="card-img-top"
+                              alt="img-fluid"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Burning Jazz-rock</h5>
+                              <p class="dotted">
+                                you'll find fiery, modern,groovy, jazz-rock
                               </p>
-                              <span class="br"></span>
-                              <p class="song-artist">Queen</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">4:25</p>
                             </div>
                           </div>
-                  
-                          <!-- Song 9 -->
-                  
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">9</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">Doing Alright -... Revisited</p>
-                              <span class="br"></span>
-                              <p class="song-artist">Queen</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">2:43</p>
-                            </div>
-                          </div>
-                  
-                          <!-- Song 10 -->
-                  
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">10</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">Crazy Little Thing Called Love</p>
-                              <span class="br"></span>
-                              <p class="song-artist">Queen</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">3:16</p>
+                        </div>
+              
+                        <div class="col-2 h-100">
+                          <div class="card">
+                            <img
+                              src="./img/artist-img/abba2.jpg"
+                              class="card-img-top"
+                              alt="img-fluid"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Burning Jazz-rock</h5>
+                              <p class="dotted">
+                                you'll find fiery, modern,groovy, jazz-rock
+                              </p>
                             </div>
                           </div>
-                  
-                          <!-- Song 11 -->
-                  
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">11</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">Doing Alright -... Revisited</p>
-                              <span class="br"></span>
-                              <p class="song-artist">Smile</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">3:16</p>
+                        </div>
+              
+                        <div class="col-2 h-100">
+                          <div class="card">
+                            <img
+                              src="./img/artist-img/george3.jpg"
+                              class="card-img-top"
+                              alt="img-fluid"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Burning Jazz-rock</h5>
+                              <p class="dotted">
+                                you'll find fiery, modern,groovy, jazz-rock
+                              </p>
                             </div>
                           </div>
-                  
-                          <!-- Song 12 -->
-                  
-                          <div class="row">
-                            <div class="col-1">
-                              <p class="song-number">12</p>
-                            </div>
-                            <div class="col-10">
-                              <p class="song-text">Doing Alright -... Revisited</p>
-                              <span class="br"></span>
-                              <p class="song-artist">Smile</p>
-                            </div>
-                            <div class="col">
-                              <p class="song-time">3:16</p>
+                        </div>
+              
+                        <div class="col-2 h-100">
+                          <div class="card">
+                            <img
+                              src="./img/artist-img/the5.jpg"
+                              class="card-img-top"
+                              alt="img-fluid"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Burning Jazz-rock</h5>
+                              <p class="dotted">
+                                you'll find fiery, modern,groovy, jazz-rock
+                              </p>
                             </div>
                           </div>
                         </div>
                       </div>
-                  <a href=""><h1 class="see-more" style="margin-bottom: 20px;">SEE MORE</h1></a>
+                    </div>
+                  </section>
+                  <div class="d-flex">
+                    <div style="display: flex; justify-content: start!important; flex-direction: column;">
+                        <a href="" class="name-tag" style="font-size: 18px; font-weight: bold;"><h1 class="title-section" style="margin-bottom: 0;">Top tracks this month</h1></a>
+                        <span class="text-muted">Only visible to you</span>
+                    </div>
+                  </div>
+                  <div class="row d-flex" style="margin-bottom: 50px;">
+                    <div class="col-12">
+                      <div class="col-12 d-flex flex-column mb-0 background-list">
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex">
+                              <div class="d-flex my-auto m-0">
+                                <h1 class="views">1</h1>
+                              </div>
+                              <img class="artist-pic" src="./img/juice 2.jpg">
+                                <div class="d-flex flex-column">
+                                  <p class="line-breaker">some random text to show</p>
+                                  <span class="explicit-content">E</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-row">
+                            <p class="views">642,364,286</p>
+                          </div>
+                          <div class="d-flex">
+                            <div class="d-flex flex-row">
+                              <img class="unliked" src="./img/heart-64.svg">
+                              <p class="views">2:30</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex flex-column mb-0 background-list">
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex">
+                              <div class="d-flex my-auto m-0">
+                                <h1 class="views">2</h1>
+                              </div>
+                              <img class="artist-pic" src="./img/juice 2.jpg">
+                                <div class="d-flex flex-column">
+                                  <p class="line-breaker">some random text to show</p>
+                                  <span class="explicit-content">E</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-row">
+                            <p class="views">642,364,286</p>
+                          </div>
+                          <div class="d-flex">
+                            <div class="d-flex flex-row">
+                              <img class="unliked" src="./img/heart-64.svg">
+                              <p class="views">2:30</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex flex-column mb-0 background-list">
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex">
+                              <div class="d-flex my-auto m-0">
+                                <h1 class="views">3</h1>
+                              </div>
+                              <img class="artist-pic" src="./img/juice 2.jpg">
+                                <div class="d-flex flex-column">
+                                  <p class="line-breaker">some random text to show</p>
+                                  <span class="explicit-content">E</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-row">
+                            <p class="views">642,364,286</p>
+                          </div>
+                          <div class="d-flex">
+                            <div class="d-flex flex-row">
+                              <img class="unliked" src="./img/heart-64.svg">
+                              <p class="views">2:30</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex flex-column mb-0 background-list">
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex">
+                              <div class="d-flex my-auto m-0">
+                                <h1 class="views">4</h1>
+                              </div>
+                              <img class="artist-pic" src="./img/juice 2.jpg">
+                                <div class="d-flex flex-column">
+                                  <p class="line-breaker">some random text to show</p>
+                                  <span class="explicit-content">E</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-row">
+                            <p class="views">642,364,286</p>
+                          </div>
+                          <div class="d-flex">
+                            <div class="d-flex flex-row">
+                              <img class="unliked" src="./img/heart-64.svg">
+                              <p class="views">2:30</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex flex-column mb-0 background-list">
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex">
+                            <div class="d-flex">
+                              <div class="d-flex my-auto m-0">
+                                <h1 class="views">5</h1>
+                              </div>
+                              <img class="artist-pic" src="./img/juice 2.jpg">
+                                <div class="d-flex flex-column">
+                                  <p class="line-breaker">some random text to show</p>
+                                  <span class="explicit-content">E</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-row">
+                            <p class="views">642,364,286</p>
+                          </div>
+                          <div class="d-flex">
+                            <div class="d-flex flex-row">
+                              <img class="unliked" src="./img/heart-64.svg">
+                              <p class="views">2:30</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <section id="second-section">
                     <div class="container-fluid p-0" style="margin-bottom: 64px;">
-                      <div class="d-flex justify-content-between mt-3">
-                        <h4 style="width: bold;">Recently played</h4>
+                      <div class="d-flex justify-content-between mt-3">  
+                        <a href="" class="name-tag" style="font-size: 18px; font-weight: bold;"><h4 style="width: bold;">Public Playlist</h4></a>
                         <p><span class="text-muted"> SEE All</span></p>
                       </div>
                       <div class="row py-1 d-flex">
@@ -476,11 +484,10 @@
                             </div>
                           </div>
                         </div>
-              
                         <div class="col-2 h-100">
                           <div class="card">
                             <img
-                              src="./img/artist-img/the4.jpg"
+                              src="./img/artist-img/new9.jpg"
                               class="card-img-top"
                               alt="img-fluid"
                             />
@@ -492,22 +499,21 @@
                             </div>
                           </div>
                         </div>
-              
                         <div class="col-2 h-100">
-                          <div class="card">
-                            <img
-                              src="./img/artist-img/janis7.jpg"
-                              class="card-img-top"
-                              alt="img-fluid"
-                            />
-                            <div class="card-body">
-                              <h5 class="card-title">Burning Jazz-rock</h5>
-                              <p class="dotted">
-                                you'll find fiery, modern,groovy, jazz-rock
-                              </p>
+                            <div class="card">
+                              <img
+                                src="./img/artist-img/janis7.jpg"
+                                class="card-img-top"
+                                alt="img-fluid"
+                              />
+                              <div class="card-body">
+                                <h5 class="card-title">Burning Jazz-rock</h5>
+                                <p class="dotted">
+                                  you'll find fiery, modern,groovy, jazz-rock
+                                </p>
+                              </div>
                             </div>
                           </div>
-                        </div>
                       </div>
                     </div>
                   </section>
