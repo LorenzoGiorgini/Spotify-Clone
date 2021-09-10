@@ -1,2 +1,2 @@
 # Spotify-clone
- Cloned spotify with extra features
+ cloned spotify with some extra features
