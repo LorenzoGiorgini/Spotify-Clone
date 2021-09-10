@@ -34,6 +34,25 @@ body {
     letter-spacing: 2px;
 }
 
+.or {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    margin-left: 145px;
+   
+
+}
+
+.can {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
 #email {
     width: 100%;
     margin-bottom: 10px;
