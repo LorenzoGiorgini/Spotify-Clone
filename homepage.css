@@ -22,25 +22,32 @@ html {
   height: 90%;
 }
 
+#logo-spotify {
+  width: 70%;
+  height: auto;
+  min-height: 25px;
+  min-width: 150px;
+  max-width: 70%;
+  margin-top: 20px;
+  padding: 0 30px;
+}
+
 .fluid-padding {
   padding: 0;
   height: 100%;
 }
 
 #logo-spotify {
-  width: 70%;
-  height: auto;
-  min-height: 25px;
-  min-width : 150px;
-  max-width : 70%;
+  height: 45px;
   margin-top: 20px;
-  padding: 0 30px;
+  margin-left: 20px;
 }
 
 .music-container {
   width: 100%;
+  height: 100%;
   overflow-y: scroll;
-  background: #1F1F1F;
+  background: #1f1f1f;
 }
 
 .position-aside {
@@ -107,7 +114,7 @@ a:link {
 
 #scrollable-section {
   overflow-y: auto;
-  height: 45% !important;
+  height: 200px !important;
 }
 
 /* width */
@@ -180,7 +187,7 @@ li {
 }
 
 .slider:hover {
-  background: #1DB954;
+  background: #1db954;
 }
 
 .slider:hover.slider::-webkit-slider-thumb {
@@ -241,7 +248,7 @@ li {
 }
 
 .slider1:hover {
-  background: #1DB954;
+  background: #1db954;
 }
 
 .slider1:hover.slider1::-webkit-slider-thumb {
@@ -364,35 +371,32 @@ li {
   display: flex;
   padding: 24px 32px;
   align-items: center;
-  margin-top: 15px;
+  margin-top: -20px;
 }
 
 .main-content-album {
   width: 100%;
-  background: rgb(31,31,31);
-  background: linear-gradient(0deg, rgba(31,31,31,1) 75%, rgba(139,140,140,1) 100%);
-  overflow-y: hidden;
-  margin-top: -16px;
+  background: #1f1f1f;
+  overflow-y: auto;
 }
 
 .play-button {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: #1DB954;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #1db954;
+  position: relative;
   margin-right: 28px;
   cursor: pointer;
-  transition: all .02s ease-in-out; 
-}
-
-.play-button:hover {
-  transform: scale(1.1);
 }
 
 .play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  margin: auto;
   font-size: 40px;
 }
 
@@ -401,7 +405,6 @@ li {
   font-size: 28px;
   cursor: pointer;
 }
-
 
 #follow-button {
   background-color: transparent;
@@ -412,7 +415,7 @@ li {
   color: #fff;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   line-height: 16px;
   padding: 7px 15px;
   text-align: center;
@@ -431,110 +434,13 @@ li {
   display: flex;
   flex-direction: column;
   padding: 0px 32px;
+  padding-bottom: 70px;
+  background-color: #000000;
 }
 
-.artist-pic {
-  width: 40px;
-  height: 40px;
-  margin: 0 16px 0 16px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.explicit-content {
-  height: 16px;
-  width: 15px;
-  background: #A9AAAB;
-  margin-top: -15px;
-  text-align: center;
-  color: black;
-  font-size: 11px;
-}
-
-.title-section {
-  font-size: 24px;
-  color: white;
-  margin-bottom: 20px;
-}
-
-.line-breaker {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 150px;
-  margin-top: 9px;
-}
-
-.views {
-  font-size: 14px;
-  color: white;
-  font-weight: normal;
-  margin: auto;
-}
-
-.unliked {
-  height: 16px;
-  width: 16px;
-  margin-right: 15px;
-  margin-top: 22px;
-  opacity: 0;
-}
-
-.background-list:hover{
-  background: #2A2C2F;
-  border-radius: 3px;
-  opacity: 1;
-}
-
-.background-list:hover .unliked {
-  opacity: 1;
-}
-
-.see-more {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .1em;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: rgba(255,255,255,.7);
-  margin-top: 20px;
-  opacity: 0.7;
-}
-
-.see-more:hover {
-  opacity: 1;
-}
-
-.artist-pick {
-  width: 76px;
-  height: 76px;
-  margin: 0 16px 0 0;
-}
-
-.artist-small-pic {
-  width: 24px;
-  height: 24px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.artist-name {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 16px;
-  text-transform: none;
-}
-
-.name-tag {
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: normal;
-  line-height: 24px;
+/* .container-fluid {
+  background: linear-gradient(45deg, rgb(48, 10, 10) 0%, rgb(22, 23, 26) 100%);
+  background-attachment: fixed;
   color: white;
 }
-
-.name-tag:hover {
-  text-decoration: underline!important;
-  color: white;
-}
+ */

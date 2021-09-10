@@ -41,6 +41,7 @@ html {
   width: 100%;
   overflow-y: scroll;
   background: #1F1F1F;
+  overflow-x: hidden;
 }
 
 .position-aside {
@@ -317,9 +318,8 @@ li {
 }
 
 #navbar {
-  background-color: #181818;
+  background: #581F48;
   color: white;
-  background-image: url("./img/queen-live-around-the-world.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
@@ -370,7 +370,7 @@ li {
 .main-content-album {
   width: 100%;
   background: rgb(31,31,31);
-  background: linear-gradient(0deg, rgba(31,31,31,1) 75%, rgba(139,140,140,1) 100%);
+  background: linear-gradient(0deg, rgba(31,31,31,1) 70%, #3F1634 100%);
   overflow-y: hidden;
   margin-top: -16px;
 }
@@ -394,30 +394,18 @@ li {
 
 .play {
   font-size: 40px;
+  margin-left: 5px;
 }
 
 .tr-dots {
   margin-left: 24px;
   font-size: 28px;
   cursor: pointer;
+  opacity: 0.5;
 }
 
-
-#follow-button {
-  background-color: transparent;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .1em;
-  line-height: 16px;
-  padding: 7px 15px;
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
+.tr-dots:hover {
+  opacity: 1;
 }
 
 .icons-color-size-before {
@@ -431,6 +419,17 @@ li {
   display: flex;
   flex-direction: column;
   padding: 0px 32px;
+}
+
+.liked {
+  height: 32px;
+  width: 32px;
+  opacity: 0.5;
+  color: white;
+}
+
+.liked:hover {
+  opacity: 1;
 }
 
 .artist-pic {
@@ -537,4 +536,70 @@ li {
 .name-tag:hover {
   text-decoration: underline!important;
   color: white;
+}
+
+.profile-img {
+  height: 232px; 
+  width: 232px;
+  filter: drop-shadow(30px 10px 4px #0000001f); 
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 1;
+}
+
+.image-profile-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 232px; 
+  width: 232px; 
+  margin: 30px; 
+  border-radius: 50%;
+  opacity: 1;
+  background-image: url(./img/artist-img/backstreet10.jpg);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
+.small-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  display: none;
+  font-size: 10px;
+  color: white;
+}
+
+.pencil-profile {
+  font-size: 2rem;
+}
+
+.text-profile {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.box:hover .small-box {
+  display: flex;
+}
+
+
+.text-followers {
+  color: white;
+  text-decoration: unset;
+}
+
+.text-followers:hover {
+  color: white;
+  text-decoration: underline!important;
 }
